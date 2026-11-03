@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse hand-picked deals on useful finds for your home, tech, style, and everyday life.">
+  <title>Goodfinds — Good stuff. Better finds.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Goodfinds home"><span class="brand-mark">g.</span> goodfinds</a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#deals">Deals</a>
+      <a href="#categories">Categories</a>
+      <a href="#about">About</a>
+    </nav>
+    <a class="header-link" href="#deals">Find your next favorite <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> A little less scrolling, a lot more finding</p>
+        <h1>Good stuff.<br><span>Better finds.</span></h1>
+        <p class="hero-description">A thoughtful edit of useful things, clever upgrades, and genuinely good deals for everyday life.</p>
+        <a class="button button-dark" href="#deals">Explore the finds <span aria-hidden="true">↓</span></a>
+        <div class="hero-note"><span class="note-stars" aria-hidden="true">✳</span> Curated with care. Updated often.</div>
+      </div>
+      <div class="hero-art">
+        <img class="hero-photo" src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="Warm, modern living room with thoughtfully chosen furniture and decor">
+        <div class="hero-photo-caption"><span>THE GOOD EDIT</span><span>Made for everyday living</span></div>
+      </div>
+    </section>
+
+    <section class="category-section" id="categories">
+      <div class="section-heading">
+        <div><p class="eyebrow">Take a look around</p><h2>Find your kind of good.</h2></div>
+        <p class="section-aside">A good find can be anything.</p>
+      </div>
+      <div class="category-list" role="group" aria-label="Filter deals by category">
+        <button class="category-chip active" type="button" data-category="all" aria-pressed="true"><span>✳</span> All finds</button>
+        <button class="category-chip" type="button" data-category="tech" aria-pressed="false"><span>⌘</span> Tech & gadgets</button>
+        <button class="category-chip" type="button" data-category="home" aria-pressed="false"><span>⌂</span> Home & living</button>
+        <button class="category-chip" type="button" data-category="style" aria-pressed="false"><span>✿</span> Style & care</button>
+        <button class="category-chip" type="button" data-category="everyday" aria-pressed="false"><span>♡</span> Everyday</button>
+      </div>
+    </section>
+
+    <section class="deals-section" id="deals">
+      <div class="deals-heading">
+        <div><p class="eyebrow">The shortlist</p><h2>Worth a closer look.</h2></div>
+        <label class="search-box">
+          <span aria-hidden="true">⌕</span>
+          <input id="deal-search" type="search" placeholder="Search finds..." aria-label="Search finds">
+          <kbd>⌕</kbd>
+        </label>
+      </div>
+      <div class="product-grid" id="product-grid">
+        <article class="product-card" data-category="tech" data-name="wireless headphones">
+          <div class="product-image"><img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&amp;fit=crop&amp;w=700&amp;q=85" alt="Wireless over-ear headphones"><span class="image-tag">TECH PICK</span></div>
+          <div class="product-details"><p class="product-category">Tech & gadgets</p><h3>Wireless headphones</h3><p class="product-description">Your own little bubble, wherever you go.</p><div class="product-bottom"><span class="product-price">From $49</span><a href="#about" class="product-link" aria-label="View wireless headphones">Take a look <span aria-hidden="true">↗</span></a></div></div>
+        </article>
+        <article class="product-card" data-category="home" data-name="ceramic pour-over set">
+          <div class="product-image"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&amp;fit=crop&amp;w=700&amp;q=85" alt="Freshly brewed coffee and coffee-making accessories"><span class="image-tag">SLOW MORNING</span></div>
+          <div class="product-details"><p class="product-category">Home & living</p><h3>Ceramic pour-over set</h3><p class="product-description">A calmer, nicer way to start the day.</p><div class="product-bottom"><span class="product-price">From $28</span><a href="#about" class="product-link" aria-label="View ceramic pour-over set">Take a look <span aria-hidden="true">↗</span></a></div></div>
+        </article>
+        <article class="product-card" data-category="style" data-name="everyday tote bag">
+          <div class="product-image"><img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&amp;fit=crop&amp;w=700&amp;q=85" alt="Everyday canvas bag"><span class="image-tag">DAILY FAVORITE</span></div>
+          <div class="product-details"><p class="product-category">Style & care</p><h3>The everyday tote</h3><p class="product-description">Room for all the things you didn't plan on.</p><div class="product-bottom"><span class="product-price">From $32</span><a href="#about" class="product-link" aria-label="View the everyday tote">Take a look <span aria-hidden="true">↗</span></a></div></div>
+        </article>
+        <article class="product-card" data-category="everyday" data-name="reusable water bottle">
+          <div class="product-image"><img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&amp;fit=crop&amp;w=700&amp;q=85" alt="Reusable stainless steel water bottle"><span class="image-tag">LITTLE UPGRADE</span></div>
+          <div class="product-details"><p class="product-category">Everyday</p><h3>Reusable water bottle</h3><p class="product-description">A simple sidekick for wherever today goes.</p><div class="product-bottom"><span class="product-price">From $22</span><a href="#about" class="product-link" aria-label="View reusable water bottle">Take a look <span aria-hidden="true">↗</span></a></div></div>
+        </article>
+      </div>
+      <p class="empty-state" id="empty-state" hidden>No finds match that search. Try another word or category.</p>
+    </section>
+
+    <section class="newsletter" id="about">
+      <div class="newsletter-mark" aria-hidden="true">✳</div>
+      <div><p class="eyebrow">The good-find note</p><h2>Good things, occasionally.</h2><p>Our favorite new finds and deals, delivered when there's something worth sharing.</p></div>
+      <form class="newsletter-form" id="newsletter-form">
+        <label class="visually-hidden" for="email">Your email address</label>
+        <input id="email" type="email" placeholder="Your email address" required>
+        <button class="button button-dark" type="submit">Count me in <span aria-hidden="true">→</span></button>
+        <p class="form-message" id="form-message" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="#"><span class="brand-mark">g.</span> goodfinds</a>
+    <p>Good finds for the everyday.</p>
+    <p class="disclosure">Some links may be affiliate links. If you buy through them, we may earn a small commission at no extra cost to you.</p>
+    <span class="copyright">© 2026 Goodfinds</span>
+  </footer>
+
+  <script>
+    const categoryButtons = document.querySelectorAll(".category-chip");
+    const productCards = document.querySelectorAll(".product-card");
+    const searchInput = document.querySelector("#deal-search");
+    const emptyState = document.querySelector("#empty-state");
+    let activeCategory = "all";
+
+    function updateProducts() {
+      const searchTerm = searchInput.value.trim().toLowerCase();
+      let visibleCount = 0;
+
+      productCards.forEach((card) => {
+        const categoryMatches = activeCategory === "all" || card.dataset.category === activeCategory;
+        const searchMatches = card.dataset.name.includes(searchTerm);
+        const isVisible = categoryMatches && searchMatches;
+        card.hidden = !isVisible;
+        if (isVisible) visibleCount += 1;
+      });
+
+      emptyState.hidden = visibleCount > 0;
+    }
+
+    categoryButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        activeCategory = button.dataset.category;
+        categoryButtons.forEach((categoryButton) => {
+          const isActive = categoryButton === button;
+          categoryButton.classList.toggle("active", isActive);
+          categoryButton.setAttribute("aria-pressed", String(isActive));
+        });
+        updateProducts();
+      });
+    });
+
+    searchInput.addEventListener("input", updateProducts);
+
+    document.querySelector("#newsletter-form").addEventListener("submit", (event) => {
+      event.preventDefault();
+      document.querySelector("#form-message").textContent = "Thanks for stopping by! Newsletter signup will be available soon.";
+    });
+  </script>
+</body>
+</html>
